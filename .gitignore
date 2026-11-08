@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.env*
+CLAUDE.md
+.claude/
+docs/
+.remember/
+napkin.md

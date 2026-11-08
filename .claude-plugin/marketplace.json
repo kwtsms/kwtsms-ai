@@ -1,0 +1,15 @@
+{
+  "name": "kwtsms",
+  "description": "kwtSMS tools for AI coding agents: send SMS through the kwtSMS gateway (Kuwait) and build kwtSMS integrations.",
+  "owner": {
+    "name": "kwtSMS",
+    "url": "https://www.kwtsms.com"
+  },
+  "plugins": [
+    {
+      "name": "kwtsms",
+      "source": "./plugins/kwtsms",
+      "description": "Send SMS, check balance, Sender IDs and coverage from Claude Code (kwtSMS MCP server, preview and test by default), plus a kwtSMS API skill."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "kwtsms",
+  "version": "0.1.0",
+  "description": "kwtSMS SMS gateway (Kuwait) for Claude Code: send SMS with preview and test mode by default, balance, Sender IDs, coverage, and a skill for writing kwtSMS integrations.",
+  "author": {
+    "name": "kwtSMS",
+    "url": "https://www.kwtsms.com"
+  },
+  "homepage": "https://github.com/kwtsms/kwtsms-ai",
+  "repository": "https://github.com/kwtsms/kwtsms-ai",
+  "license": "MIT",
+  "keywords": [
+    "sms",
+    "kwtsms",
+    "kuwait",
+    "otp",
+    "mcp"
+  ],
+  "userConfig": {
+    "username": {
+      "type": "string",
+      "title": "kwtSMS API username",
+      "description": "API username from your kwtSMS account (not your mobile number). Use a dedicated API user for AI tools.",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "title": "kwtSMS API password",
+      "description": "API password; kept in secure storage, never shown to the AI.",
+      "required": true,
+      "sensitive": true
+    },
+    "sender_id": {
+      "type": "string",
+      "title": "Sender ID",
+      "description": "Sender ID used for every send. KWT-SMS is for testing only.",
+      "default": "KWT-SMS"
+    },
+    "allow_live": {
+      "type": "boolean",
+      "title": "Allow live sending",
+      "description": "Off: preview and test sends only (nothing reaches a phone). On: the AI may send real SMS after you confirm each one.",
+      "default": false
+    }
+  }
+}

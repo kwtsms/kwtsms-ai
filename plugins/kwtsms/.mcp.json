@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "kwtsms": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "kwtsms-mcp@^0.1.0"
+      ],
+      "env": {
+        "KWTSMS_USERNAME": "${user_config.username}",
+        "KWTSMS_PASSWORD": "${user_config.password}",
+        "KWTSMS_SENDER_ID": "${user_config.sender_id}",
+        "KWTSMS_MCP_ALLOW_LIVE": "${user_config.allow_live}"
+      }
+    }
+  }
+}

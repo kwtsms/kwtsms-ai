@@ -1,6 +1,6 @@
 {
   "name": "kwtsms",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "displayName": "kwtSMS",
   "description": "Send SMS through kwtSMS, the Kuwaiti SMS gateway: write the message, fix the numbers, see the cost, and send when you approve. Plus balance, Sender IDs, coverage, message status, and help building SMS and OTP into your app.",
   "author": {

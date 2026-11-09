@@ -8,7 +8,7 @@ kwtSMS delivers to Zain, Ooredoo, stc and Virgin in Kuwait and to more than 200 
 
 ## What it adds
 
-- **SMS tools** (the open source [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp) server, version 0.2.0):
+- **SMS tools** (the open source [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp) server, version 0.2.1):
   - `preview_sms`: checks the numbers, cleans the message, counts SMS parts and credits. Sends nothing.
   - `send_test_sms`: test send, not delivered to any phone.
   - `send_sms`: real SMS, only when you switch live sending on. Claude asks you before each one.

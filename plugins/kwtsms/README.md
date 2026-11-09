@@ -46,16 +46,16 @@ Privacy policy: https://www.kwtsms.com/privacy.html
 1. Open a free kwtSMS account: https://www.kwtsms.com/cportal/signup/
 2. Copy your API username and API password from the API Information page of your account. They are not your mobile
    number or your account login. Use a separate API user for AI tools.
-3. Add the plugin and enter them in its settings:
-   - Claude app: Customize, Plugins, find kwtSMS, add it.
-   - Claude Code: `claude plugin install kwtsms --marketplace kwtsms/kwtsms-ai`, then `/plugin configure kwtsms@kwtsms`.
+3. In Claude Code, install the plugin and enter them in its settings:
+   `claude plugin install kwtsms --marketplace kwtsms/kwtsms-ai`, then `/plugin configure kwtsms@kwtsms`.
 
 Then ask: "What is my kwtSMS balance?"
 
 ## Where it works
 
-The SMS tools run on your computer and need Node.js 18 or newer: they work in Claude Code and in Cowork sessions on
-your computer. In claude.ai chat only the skill loads.
+This plugin is for Claude Code. The SMS tools run on your computer and need Node.js 18 or newer. For the Claude
+desktop app, use the one-click kwtSMS extension instead: download `kwtsms-mcp.mcpb` from
+https://github.com/kwtsms/kwtsms-mcp/releases/latest and open it with Claude.
 
 ## Troubleshooting
 

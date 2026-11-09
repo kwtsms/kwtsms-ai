@@ -9,6 +9,17 @@ gives Claude Code:
 - **A kwtSMS skill**: Claude knows the kwtSMS API, phone number rules, Arabic and English part counting, test mode and
   error codes when it writes or fixes your integration code.
 
+## What you can ask Claude Code
+
+- "Here is my customer list. Write a short Arabic offer for the weekend sale and send it to everyone."
+- "Text everyone in this sheet whose order is ready."
+- "When the build finishes, text me. If the tests fail, send me an SMS."
+- "What is my balance? Which Sender IDs do I have? Did my last message arrive?"
+- "Add OTP login by SMS to this app with kwtSMS, and test it in test mode."
+
+Numbers are fixed for you (Arabic digits, `+`, `00`, spaces, duplicates), messages are cleaned, and every send starts
+as a preview with the number of messages and credits. Nothing reaches a phone until you switch live sending on.
+
 ## Install
 
 ```bash

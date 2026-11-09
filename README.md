@@ -22,13 +22,22 @@ as a preview with the number of messages and credits. Nothing reaches a phone un
 
 ## Install
 
+One command in your terminal (Claude Code 2.1.292 or newer):
+
 ```bash
-claude plugin marketplace add kwtsms/kwtsms-ai
-claude plugin install kwtsms@kwtsms
+claude plugin install kwtsms --marketplace kwtsms/kwtsms-ai
 ```
 
-Claude Code asks for your kwtSMS API username and password (the password goes to secure storage, the AI never sees it),
-your Sender ID, and whether live sending is allowed (off by default).
+Or inside Claude Code, type:
+
+```
+/plugin install kwtsms --marketplace kwtsms/kwtsms-ai
+```
+
+Then enter your kwtSMS API username and password, your Sender ID, and whether live sending is allowed (off by
+default): `/plugin configure kwtsms@kwtsms` in Claude Code. The password goes to secure storage; the AI never sees it.
+
+Older Claude Code: `claude plugin marketplace add kwtsms/kwtsms-ai`, then `claude plugin install kwtsms@kwtsms`.
 
 Get an API username and password from your kwtSMS account ([sign up](https://www.kwtsms.com/cportal/signup/)). Use a
 dedicated API user for AI tools, not your main login.

@@ -4,13 +4,17 @@
       "command": "npx",
       "args": [
         "-y",
-        "kwtsms-mcp@0.1.2"
+        "kwtsms-mcp@0.2.0"
       ],
       "env": {
         "KWTSMS_USERNAME": "${user_config.username}",
         "KWTSMS_PASSWORD": "${user_config.password}",
         "KWTSMS_SENDER_ID": "${user_config.sender_id}",
-        "KWTSMS_MCP_ALLOW_LIVE": "${user_config.allow_live}"
+        "KWTSMS_MCP_ALLOW_LIVE": "${user_config.allow_live}",
+        "KWTSMS_MCP_MAX_NUMBERS": "${user_config.max_numbers}",
+        "KWTSMS_MCP_MAX_PER_HOUR": "${user_config.max_per_hour}",
+        "KWTSMS_MCP_MAX_CREDITS_PER_DAY": "${user_config.max_credits_per_day}",
+        "KWTSMS_MCP_ALLOWED_PREFIXES": "${user_config.allowed_countries}"
       }
     }
   }

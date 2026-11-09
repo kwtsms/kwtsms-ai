@@ -1,7 +1,8 @@
 {
   "name": "kwtsms",
-  "version": "0.2.1",
-  "description": "kwtSMS SMS gateway (Kuwait) for Claude Code: send SMS with preview and test mode by default, balance, Sender IDs, coverage, and a skill for writing kwtSMS integrations.",
+  "version": "0.3.0",
+  "displayName": "kwtSMS",
+  "description": "Send SMS through kwtSMS, the Kuwaiti SMS gateway: write the message, fix the numbers, see the cost, and send when you approve. Plus balance, Sender IDs, coverage, message status, and help building SMS and OTP into your app.",
   "author": {
     "name": "kwtSMS",
     "url": "https://www.kwtsms.com"
@@ -44,8 +45,36 @@
     "allow_live": {
       "type": "boolean",
       "title": "Allow live sending",
-      "description": "Off: preview and test sends only (nothing reaches a phone). On: the AI may send real SMS after you confirm each one.",
+      "description": "Off: preview and test sends only, nothing reaches a phone. On: real SMS; Claude asks you before each send.",
       "default": false
+    },
+    "max_numbers": {
+      "type": "number",
+      "title": "Numbers per send",
+      "description": "Most phone numbers in one send (1 to 200).",
+      "default": 10,
+      "min": 1,
+      "max": 200
+    },
+    "max_per_hour": {
+      "type": "number",
+      "title": "Numbers per hour",
+      "description": "Most phone numbers sent to in one hour.",
+      "default": 50,
+      "min": 1
+    },
+    "max_credits_per_day": {
+      "type": "number",
+      "title": "Credits per day",
+      "description": "Most credits the plugin may use in one day.",
+      "default": 100,
+      "min": 1
+    },
+    "allowed_countries": {
+      "type": "string",
+      "title": "Allowed country codes",
+      "description": "Country codes you may send to, comma separated, for example 965 or 965,966,971.",
+      "default": "965"
     }
   }
 }

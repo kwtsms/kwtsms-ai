@@ -9,7 +9,7 @@
     {
       "name": "kwtsms",
       "source": "./plugins/kwtsms",
-      "description": "Send SMS, check balance, Sender IDs and coverage from Claude Code (kwtSMS MCP server, preview and test by default), plus a kwtSMS API skill."
+      "description": "Send SMS through kwtSMS, the Kuwaiti SMS gateway: write the message, fix the numbers, see the cost, and send when you approve. Plus balance, Sender IDs, coverage, message status, and help building SMS and OTP into your app."
     }
   ]
 }

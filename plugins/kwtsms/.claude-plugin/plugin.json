@@ -1,6 +1,6 @@
 {
   "name": "kwtsms",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "kwtSMS SMS gateway (Kuwait) for Claude Code: send SMS with preview and test mode by default, balance, Sender IDs, coverage, and a skill for writing kwtSMS integrations.",
   "author": {
     "name": "kwtSMS",

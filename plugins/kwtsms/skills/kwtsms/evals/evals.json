@@ -1,0 +1,20 @@
+{
+  "skill_name": "kwtsms",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here is customers.csv with a phone column. Write a short Arabic offer for our weekend sale and send it to all of them.",
+      "expected_output": "Writes an Arabic message that fits one part (70 characters), runs send_sms in preview mode, reports valid, duplicate and invalid numbers, parts and credits, compares with the balance, and does not send live until the user confirms this exact message and list."
+    },
+    {
+      "id": 2,
+      "prompt": "Add SMS login codes to my Express app using kwtSMS.",
+      "expected_output": "POST JSON to /API/send/ with credentials from environment variables, server-side 6-digit code stored as a hash with expiry and attempt limit, resend blocked 3 to 4 minutes, transactional private Sender ID (not KWT-SMS) for production, test=1 during development, no code or full number in logs."
+    },
+    {
+      "id": 3,
+      "prompt": "My send returns ERR024 and my delivery report for a Kuwait number never comes. Why?",
+      "expected_output": "ERR024: the API lockdown is on and the server IP is not in the allowed list; add it in the dashboard. Kuwait numbers do not return delivery reports; use status with the msg_id instead."
+    }
+  ]
+}

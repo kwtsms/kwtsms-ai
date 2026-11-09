@@ -9,6 +9,11 @@
   "homepage": "https://github.com/kwtsms/kwtsms-ai",
   "repository": "https://github.com/kwtsms/kwtsms-ai",
   "license": "MIT",
+  "icon": "./assets/kwtsms-icon.png",
+  "documentationUrl": "https://github.com/kwtsms/kwtsms-ai#readme",
+  "supportUrl": "https://www.kwtsms.com/support.html",
+  "privacyPolicyUrl": "https://www.kwtsms.com/privacy.html",
+  "termsOfServiceUrl": "https://www.kwtsms.com/policy.html",
   "keywords": [
     "sms",
     "kwtsms",

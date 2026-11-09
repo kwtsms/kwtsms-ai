@@ -19,7 +19,7 @@ claude plugin install kwtsms@kwtsms
 Claude Code asks for your kwtSMS API username and password (the password goes to secure storage, the AI never sees it),
 your Sender ID, and whether live sending is allowed (off by default).
 
-Get an API username and password from your kwtSMS account ([sign up](https://www.kwtsms.com/account/signup/)). Use a
+Get an API username and password from your kwtSMS account ([sign up](https://www.kwtsms.com/cportal/signup/)). Use a
 dedicated API user for AI tools, not your main login.
 
 ## Use it

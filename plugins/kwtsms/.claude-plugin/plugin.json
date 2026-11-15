@@ -1,6 +1,6 @@
 {
   "name": "kwtsms",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "displayName": "kwtSMS",
   "description": "Send SMS through kwtSMS, the Kuwaiti SMS gateway: write the message, fix the numbers, see the cost, and send when you approve. Plus balance, Sender IDs, coverage, message status, and help building SMS and OTP into your app.",
   "author": {
@@ -21,60 +21,5 @@
     "kuwait",
     "otp",
     "mcp"
-  ],
-  "userConfig": {
-    "username": {
-      "type": "string",
-      "title": "kwtSMS API username",
-      "description": "API username from your kwtSMS account (not your mobile number). Use a dedicated API user for AI tools.",
-      "required": true
-    },
-    "password": {
-      "type": "string",
-      "title": "kwtSMS API password",
-      "description": "API password; kept in secure storage, never shown to the AI.",
-      "required": true,
-      "sensitive": true
-    },
-    "sender_id": {
-      "type": "string",
-      "title": "Sender ID",
-      "description": "Sender ID used for every send. KWT-SMS is for testing only.",
-      "default": "KWT-SMS"
-    },
-    "allow_live": {
-      "type": "boolean",
-      "title": "Allow live sending",
-      "description": "Off: preview and test sends only, nothing reaches a phone. On: real SMS; Claude asks you before each send.",
-      "default": false
-    },
-    "max_numbers": {
-      "type": "number",
-      "title": "Numbers per send",
-      "description": "Most phone numbers in one send (1 to 200).",
-      "default": 10,
-      "min": 1,
-      "max": 200
-    },
-    "max_per_hour": {
-      "type": "number",
-      "title": "Numbers per hour",
-      "description": "Most phone numbers sent to in one hour.",
-      "default": 50,
-      "min": 1
-    },
-    "max_credits_per_day": {
-      "type": "number",
-      "title": "Credits per day",
-      "description": "Most credits the plugin may use in one day.",
-      "default": 100,
-      "min": 1
-    },
-    "allowed_countries": {
-      "type": "string",
-      "title": "Allowed country codes",
-      "description": "Country codes you may send to, comma separated, for example 965 or 965,966,971.",
-      "default": "965"
-    }
-  }
+  ]
 }

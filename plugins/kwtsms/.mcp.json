@@ -1,21 +1,8 @@
 {
   "mcpServers": {
     "kwtsms": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "kwtsms-mcp@0.2.1"
-      ],
-      "env": {
-        "CLAUDE_PLUGIN_OPTION_USERNAME": "${user_config.username}",
-        "CLAUDE_PLUGIN_OPTION_PASSWORD": "${user_config.password}",
-        "CLAUDE_PLUGIN_OPTION_SENDER_ID": "${user_config.sender_id}",
-        "CLAUDE_PLUGIN_OPTION_ALLOW_LIVE": "${user_config.allow_live}",
-        "CLAUDE_PLUGIN_OPTION_MAX_NUMBERS": "${user_config.max_numbers}",
-        "CLAUDE_PLUGIN_OPTION_MAX_PER_HOUR": "${user_config.max_per_hour}",
-        "CLAUDE_PLUGIN_OPTION_MAX_CREDITS_PER_DAY": "${user_config.max_credits_per_day}",
-        "CLAUDE_PLUGIN_OPTION_ALLOWED_COUNTRIES": "${user_config.allowed_countries}"
-      }
+      "type": "http",
+      "url": "https://mcp.kwtsms.com/mcp"
     }
   }
 }

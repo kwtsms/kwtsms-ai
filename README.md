@@ -3,7 +3,7 @@
 A Claude Code plugin marketplace from [kwtSMS](https://www.kwtsms.com), the SMS gateway in Kuwait. The `kwtsms` plugin
 gives Claude Code:
 
-- **SMS tools** through the [kwtSMS MCP server](https://github.com/kwtsms/kwtsms-mcp): send SMS, balance, Sender IDs,
+- **SMS tools** through the hosted kwtSMS MCP server (`https://mcp.kwtsms.com/mcp`): send SMS, balance, Sender IDs,
   coverage, number checks and message status. Preview and test mode by default; nothing reaches a phone until you
   switch live sending on.
 - **A kwtSMS skill**: Claude knows the kwtSMS API, phone number rules, Arabic and English part counting, test mode and
@@ -34,8 +34,9 @@ Or inside Claude Code, type:
 /plugin install kwtsms --marketplace kwtsms/kwtsms-ai
 ```
 
-Then enter your kwtSMS API username and password, your Sender ID, and whether live sending is allowed (off by
-default): `/plugin configure kwtsms@kwtsms` in Claude Code. The password goes to secure storage; the AI never sees it.
+Then sign in once: type `/mcp` in Claude Code, pick `kwtsms` and choose Authenticate. A kwtSMS page opens in your
+browser: enter your kwtSMS API username and password, pick your Sender ID, and choose whether live sending is allowed
+(off by default). Claude never sees your password. To change these later, sign in again from `/mcp`.
 
 Older Claude Code: `claude plugin marketplace add kwtsms/kwtsms-ai`, then `claude plugin install kwtsms@kwtsms`.
 
@@ -55,7 +56,8 @@ held until you delete them from the Queue in your kwtSMS account. Live sends nee
 
 ## Other AI tools
 
-- Any MCP client (Claude Desktop, Cursor, VS Code): use [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp) directly.
+- claude.ai and Claude Desktop: add a custom connector with the URL `https://mcp.kwtsms.com/mcp` and sign in.
+- Other MCP clients (Cursor, VS Code), or to run the server yourself: [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp).
 - Command line and scripts: [kwtsms-cli](https://github.com/kwtsms/kwtsms-cli).
 - The skill in `plugins/kwtsms/skills/kwtsms/` follows the open Agent Skills format and works in other agents that
   read `SKILL.md` files.

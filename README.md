@@ -58,6 +58,12 @@ held until you delete them from the Queue in your kwtSMS account. Live sends nee
 
 - claude.ai and Claude Desktop: add a custom connector with the URL `https://mcp.kwtsms.com/mcp` and sign in.
 - Other MCP clients (Cursor, VS Code), or to run the server yourself: [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp).
+- The kwtSMS skill alone, for Cursor, Codex, GitHub Copilot, Windsurf, Gemini CLI, Cline and other agents
+  ([skills.sh](https://skills.sh)):
+
+  ```bash
+  npx skills add kwtsms/kwtsms-ai --skill kwtsms
+  ```
 - Command line and scripts: [kwtsms-cli](https://github.com/kwtsms/kwtsms-cli).
 - The skill in `plugins/kwtsms/skills/kwtsms/` follows the open Agent Skills format and works in other agents that
   read `SKILL.md` files.

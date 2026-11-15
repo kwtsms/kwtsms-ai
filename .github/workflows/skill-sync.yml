@@ -1,0 +1,15 @@
+# 2026-11-16 02:21 +03: skill indexers (skills.sh and others) read skills/<name>/SKILL.md at the repo root; the plugin keeps its own copy.
+# This check fails when the two copies differ. Boss msg 891, task q-skill-root-copy.
+name: skill-sync
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  same:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: diff -u plugins/kwtsms/skills/kwtsms/SKILL.md skills/kwtsms/SKILL.md

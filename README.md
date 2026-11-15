@@ -65,8 +65,8 @@ held until you delete them from the Queue in your kwtSMS account. Live sends nee
   npx skills add kwtsms/kwtsms-ai --skill kwtsms
   ```
 - Command line and scripts: [kwtsms-cli](https://github.com/kwtsms/kwtsms-cli).
-- The skill in `plugins/kwtsms/skills/kwtsms/` follows the open Agent Skills format and works in other agents that
-  read `SKILL.md` files.
+- The skill follows the open Agent Skills format and works in other agents that read `SKILL.md` files. The same file
+  is at `skills/kwtsms/SKILL.md` (for skill directories) and `plugins/kwtsms/skills/kwtsms/SKILL.md` (for the plugin).
 
 ## Support
 

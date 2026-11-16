@@ -34,6 +34,19 @@ for a limit, tell the user the limit and the number the server gave; on a self-r
 `KWTSMS_MCP_MAX_NUMBERS`, `KWTSMS_MCP_MAX_PER_HOUR`, `KWTSMS_MCP_MAX_CREDITS_PER_DAY` or `KWTSMS_MCP_ALLOWED_PREFIXES`.
 Do not split the list to get around it.
 
+## When the MCP tools are not available
+
+Pick the first that fits; never put the API password in a command line or in this chat:
+1. **MCP server** (best): ask the user to add it once. Claude Code: this plugin. claude.ai, ChatGPT, Claude Desktop,
+   Cursor, VS Code: the hosted server `https://mcp.kwtsms.com/mcp` with sign-in, or `npx kwtsms-mcp`
+   (https://github.com/kwtsms/kwtsms-mcp). It keeps test mode on by default and enforces send limits.
+2. **kwtsms-cli** for a shell, script or cron job: the user runs `kwtsms-cli setup` once, so the login is stored in
+   its config file and never typed into commands (https://github.com/kwtsms/kwtsms-cli). Add `--test` until the user
+   asks for a real send.
+3. **Code** the user is building: an official client library, credentials from environment variables.
+Raw `curl` calls are documentation for developers only. Do not send SMS from this session with `curl`: the password
+would land in the shell history and this conversation, with no test-mode default and no limits.
+
 ## Workflows
 
 ### A campaign to a customer list (CSV, sheet, pasted list)

@@ -56,10 +56,6 @@ held until you delete them from the Queue in your kwtSMS account. Live sends nee
 
 ## Other AI tools
 
-Which way to use: the MCP server first (no install, test mode by default, send limits, the AI never sees your
-password), with the kwtSMS skill next to it. `kwtsms-cli` for terminal agents, scripts and cron. Raw `curl` only as
-API documentation for developers, never as the way an agent sends.
-
 - claude.ai and Claude Desktop: add a custom connector with the URL `https://mcp.kwtsms.com/mcp` and sign in.
 - Other MCP clients (Cursor, VS Code), or to run the server yourself: [kwtsms-mcp](https://github.com/kwtsms/kwtsms-mcp).
 - The kwtSMS skill alone, for Cursor, Codex, GitHub Copilot, Windsurf, Gemini CLI, Cline and other agents

@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/readme-header-dark.png">
+  <img alt="kwtSMS for Claude Code" src=".github/assets/readme-header-light.png">
+</picture>
+
 # kwtSMS for AI coding agents
 
 A Claude Code plugin marketplace from [kwtSMS](https://www.kwtsms.com), the SMS gateway in Kuwait. The `kwtsms` plugin
